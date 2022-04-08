@@ -26,9 +26,14 @@ def main ():
     jeteta = [-3.11, 1.5,2.9]
     jetphi = [-0.90, 1.2, 3.0]
     run = 319177
-
+    
+    hemveto=[]
     for ijet in range(len(jeteta)): 
-        print (isinhemregion(run, jeteta[ijet], jetphi[ijet]))
+        hemveto.append(isinhemregion(run, jeteta[ijet], jetphi[ijet]))
+    veto =  (np.sum(np.array(hemveto))) >=1 
+    print ("veto; ", veto)
+
+    
         
 
 main()
