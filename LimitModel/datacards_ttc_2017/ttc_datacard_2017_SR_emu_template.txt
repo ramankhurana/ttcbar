@@ -5,7 +5,7 @@ jmax *  number of backgrounds
 kmax *  number of nuisance parameterS (sources of systematical uncertainties)
 
 ------------
-shapes * SR ttc_2017_WS.root ws_ttc_emu_2017:ttc2017_emu_SR_$PROCESS ws_ttc_emu_2017:ttc2017_emu_SR_$PROCESS_$SYSTEMATIC
+shapes * SR inputs/ttc_2017_WS.root ttc2017_emu_SR_$PROCESS ws_ttc_emu_2017:ttc2017_emu_SR_$PROCESS_$SYSTEMATIC
 
 ------------
 bin SR
