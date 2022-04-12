@@ -1,0 +1,265 @@
+DY:
+  color: 1
+  file:
+  - DY.root
+  instack: true
+  t: 1
+  xs: 6077.22
+  y: 2
+TTTo1L:
+  color: 5
+  file:
+  - TTTo1L.root
+  instack: false
+  t: 1
+  xs: 365.4574
+  y: 2
+TTTo2L:
+  color: 5
+  file:
+  - TTTo2L.root
+  - TTTo2L_1.root
+  instack: false
+  t: 1
+  xs: 88.3419
+  y: 2
+WJet:
+  color: 2
+  file:
+  - WJets.root
+  instack: true
+  t: 1
+  xs: 61526.7
+  y: 2
+WWW:
+  color: 4
+  file:
+  - WWW.root
+  instack: false
+  t: 1
+  xs: 0.2086
+  y: 2
+WWZ:
+  color: 4
+  file:
+  - WWZ
+  instack: false
+  t: 1
+  xs: 0.1707
+  y: 2
+WZZ:
+  color: 4
+  file:
+  - WZZ.root
+  instack: false
+  t: 1
+  xs: 0.05709
+  y: 2
+WZ_ew:
+  color: 4
+  file:
+  - WZ_ew.root
+  instack: false
+  t: 1
+  xs: 0.0163
+  y: 2
+WZ_qcd:
+  color: 4
+  file:
+  - WZ_qcd.root
+  instack: false
+  t: 1
+  xs: 5.213
+  y: 2
+ZG_ew:
+  color: 4
+  file:
+  - ZG_ew.root
+  instack: false
+  t: 1
+  xs: 0.1097
+  y: 2
+ZZ:
+  color: 4
+  file:
+  - ZZ.root
+  instack: false
+  t: 1
+  xs: 0.0086
+  y: 2
+ZZZ:
+  color: 4
+  file:
+  - ZZZ.root
+  instack: false
+  t: 1
+  xs: 0.01476
+  y: 2
+osWW:
+  color: 3
+  file:
+  - osWW.root
+  instack: false
+  t: 1
+  xs: 11.09
+  y: 2
+ssWW:
+  color: 4
+  file:
+  - ssWW.root
+  instack: false
+  t: 1
+  xs: 0.04932
+  y: 2
+tW:
+  color: 5
+  file:
+  - tW.root
+  instack: false
+  t: 1
+  xs: 35.85
+  y: 2
+t_tch:
+  color: 5
+  file:
+  - t_tch.root
+  instack: false
+  t: 1
+  xs: 136.02
+  y: 2
+tbarW:
+  color: 5
+  file:
+  - tbarW.root
+  instack: false
+  t: 1
+  xs: 35.85
+  y: 2
+tbar_tch:
+  color: 5
+  file:
+  - tbar_tch.root
+  instack: false
+  t: 1
+  xs: 80.95
+  y: 2
+tsch:
+  color: 5
+  file:
+  - tsch.root
+  instack: false
+  t: 1
+  xs: 3.36
+  y: 2
+ttH:
+  color: 5
+  file:
+  - ttH.root
+  instack: false
+  t: 1
+  xs: 0.5269
+  y: 2
+ttWH:
+  color: 5
+  file:
+  - ttWH.root
+  instack: false
+  t: 1
+  xs: 0.00114
+  y: 2
+ttWW:
+  color: 5
+  file:
+  - ttWW.root
+  instack: false
+  t: 1
+  xs: 0.007003
+  y: 2
+ttWZ:
+  color: 5
+  file:
+  - ttWZ.root
+  instack: false
+  t: 1
+  xs: 0.002453
+  y: 2
+ttWtoLNu:
+  color: 5
+  file:
+  - ttWtoLNu.root
+  instack: false
+  t: 1
+  xs: 0.1792
+  y: 2
+ttWtoQQ:
+  color: 5
+  file:
+  - ttWtoQQ.root
+  instack: false
+  t: 1
+  xs: 0.3708
+  y: 2
+ttZ:
+  color: 5
+  file:
+  - ttZ.root
+  instack: false
+  t: 1
+  xs: 0.2589
+  y: 2
+ttZH:
+  color: 5
+  file:
+  - ttZH.root
+  instack: false
+  t: 1
+  xs: 0.00113
+  y: 2
+ttZZ:
+  color: 5
+  file:
+  - ttZZ.root
+  instack: false
+  t: 1
+  xs: 0.001386
+  y: 2
+ttZtoQQ:
+  color: 5
+  file:
+  - ttZtoQQ.root
+  instack: false
+  t: 1
+  xs: 0.6012
+  y: 2
+tttJ:
+  color: 5
+  file:
+  - tttJ.root
+  instack: false
+  t: 1
+  xs: 0.0004
+  y: 2
+tttW:
+  color: 5
+  file:
+  - tttW.root
+  instack: false
+  t: 1
+  xs: 0.00073
+  y: 2
+tttt:
+  color: 5
+  file:
+  - tttt.root
+  instack: false
+  t: 1
+  xs: 0.0082
+  y: 2
+tzq:
+  color: 5
+  file:
+  - tzq.root
+  instack: false
+  t: 1
+  xs: 0.07561
+  y: 2

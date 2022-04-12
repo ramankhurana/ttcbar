@@ -82,3 +82,8 @@ attributes = {"DYee": { "OPS_l1_pt":
                     }## close this once DYee is over
           } ## end of dict 
 
+
+
+import yaml
+f = open('plot_attributes.yaml', 'w+')
+yaml.dump(attributes, f, allow_unicode=True, default_flow_style=False)

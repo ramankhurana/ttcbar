@@ -1,0 +1,118 @@
+DYee:
+  OPS_l1_eta:
+    bin:
+    - 70
+    - -3.5
+    - 3.5
+    xrange:
+    - -3.5
+    - 3.5
+    xtit: p_{T}^{sub-leading lepton}(in GeV)
+    yrange:
+    - 0.1
+    - 1000
+    ytit: '# of events'
+  OPS_l1_phi:
+    bin:
+    - 70
+    - -3.5
+    - 3.5
+    xrange:
+    - -3.5
+    - 3.5
+    xtit: p_{T}^{sub-leading lepton}(in GeV)
+    yrange:
+    - 0.1
+    - 1000
+    ytit: '# of events'
+  OPS_l1_pt:
+    bin:
+    - 90
+    - 30
+    - 300
+    xrange:
+    - 30
+    - 300
+    xtit: p_{T}^{leading lepton}(in GeV)
+    yrange:
+    - 0.1
+    - 1000
+    ytit: '# of events'
+  OPS_l2_eta:
+    bin:
+    - 70
+    - -3.5
+    - 3.5
+    xrange:
+    - -3.5
+    - 3.5
+    xtit: p_{T}^{sub-leading lepton}(in GeV)
+    yrange:
+    - 0.1
+    - 1000
+    ytit: '# of events'
+  OPS_l2_phi:
+    bin:
+    - 70
+    - -3.5
+    - 3.5
+    xrange:
+    - -3.5
+    - 3.5
+    xtit: p_{T}^{sub-leading lepton}(in GeV)
+    yrange:
+    - 0.1
+    - 1000
+    ytit: '# of events'
+  OPS_l2_pt:
+    bin:
+    - 60
+    - 30
+    - 210
+    xrange:
+    - 30
+    - 210
+    xtit: p_{T}^{sub-leading lepton}(in GeV)
+    yrange:
+    - 0.1
+    - 1000
+    ytit: '# of events'
+  OPS_z_eta:
+    bin:
+    - 70
+    - -3.5
+    - 3.5
+    xrange:
+    - -3.5
+    - 3.5
+    xtit: p_{T}^{sub-leading lepton}(in GeV)
+    yrange:
+    - 0.1
+    - 1000
+    ytit: '# of events'
+  OPS_z_mass:
+    bin:
+    - 60
+    - 60
+    - 120
+    xrange:
+    - 60
+    - 120
+    xtit: p_{T}^{sub-leading lepton}(in GeV)
+    yrange:
+    - 0.1
+    - 1000
+    ytit: '# of events'
+  OPS_z_pt:
+    bin:
+    - 60
+    - 30
+    - 400
+    xrange:
+    - 30
+    - 410
+    xtit: p_{T}^{sub-leading lepton}(in GeV)
+    yrange:
+    - 0.1
+    - 1000
+    ytit: '# of events'
