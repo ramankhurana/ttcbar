@@ -1,5 +1,5 @@
 import sys 
-import uproot4 
+import uproot4
 import numpy 
 import math 
 import time
@@ -60,42 +60,6 @@ def VarToHist(df_var, df_weight, HISTNAME, binning):
     return h_var
 
 
-
-'''
-year='2016'
-year_file = open("Year.py", "w")
-if year == '2016':
-    print('code is running for 2016')
-    year_file.write('era="2016"')
-elif year == '2017':
-    print('code is running for 2017')
-    year_file.write('era="2017"')
-elif year == '2018':
-    print('code is running for 2018')
-    year_file.write('era="2018"')
-else:
-    print('please provide year')
-    sys.exit()
-year_file.close()
-
-import ana_weight as wgt
-
-
-
-def weight_( ep_WmunuRecoil, nEle, nMu, ep_muPt, ep_muEta):#, ep_ZmumuRecoil, ep_WmunuRecoil, nEle, ep_elePt, ep_eleEta, ep_eleIsPTight, nMu, ep_muPt, ep_muEta, ep_isTightMuon):
-    total_weight=1.0
-    if (nEle==0) & (nMu==1) :
-        total_weight = weight_W1mu_(ep_WmunuRecoil, nEle, nMu, ep_muPt, ep_muEta)
-        
-    
-    return total_weight
-
-def weight_W1mu_(ep_WmunuRecoil, nEle, nMu, ep_muPt, ep_muEta):
-    weightMET, weightMET_up, weightMET_down     = wgt.getMETtrig_First( ep_WmunuRecoil, 'R')
-    weightMu, weightMu_up, weightMu_down        = wgt.mu_weight(ep_muPt, ep_muEta, 'T')
-    return ( weightMET * weightMu)
-
-'''
 
 def getpt_eta_phi(mupx, mupy,mupz):
     mupt = numpy.sqrt(mupx**2 + mupy**2)
@@ -217,8 +181,6 @@ def deltaR(phoeta, jeteta, phophi, jetphi, cut_=0.4):
     dr_unzip = numpy.sqrt(deta_unzip**2 + dphi_unzip**2)
     dr_pho_jet_status = ak.any(dr_unzip<=cut_,axis=-1)  ## use axis in new version of awkward
     return dr_pho_jet_status
-
-
 
 def getN(var_, i):
     return ak.mask(var_, ak.num(var_, axis=1)>i, highlevel=False)[:,i]
