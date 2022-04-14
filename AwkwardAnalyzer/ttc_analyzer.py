@@ -1,4 +1,4 @@
-import sys, numpy, math, time, copy, 
+import sys, numpy, math, time, copy
 start = time.clock()
 import uproot4
 import awkward1 as ak
@@ -17,9 +17,7 @@ print ("running the code for: ", inputfileList)
 
 def Isdata():
     isdata=False
-    if ("DoubleMuon" in rootfilename) | ("EGamma" in rootfilename) |  
-    ("MuonEG" in rootfilename) | ("MET" in rootfilename) | 
-    ("DoubleMuon" in rootfilename) | ("SingleMuon" in rootfilename) : 
+    if ("DoubleMuon" in rootfilename) | ("EGamma" in rootfilename) |  ("MuonEG" in rootfilename) | ("MET" in rootfilename) |  ("DoubleMuon" in rootfilename) | ("SingleMuon" in rootfilename) : 
         isdata=True
     print ("isdata : ", isdata)
     return isdata
@@ -40,6 +38,7 @@ def runOneFile(filename):
     file_=uproot4.open(inputfileList)
     nevents = 0.0
     if Isdata()==False:  
+        print ("getting the events for normalisation", ak.to_list(file_["nEventsGenWeighted"].values())[1])
         nevents=ak.to_list(file_["nEventsGenWeighted"].values())[2]
     fulltree_=ak.ArrayBuilder() ## defauter, to merge the zip later for each chunch of rootfile. 
     niterations=0
@@ -92,9 +91,10 @@ def runOneFile(filename):
             f.cd()
             h.Write()
     
+
+    f.cd()
     h_total  = TH1F("h_total_mcweight", "h_total_mcweight", 2,0,2)
     h_total.SetBinContent(1,nevents)
-    f.cd()
     h_total.Write()
 
 runOneFile(inputfileList)
