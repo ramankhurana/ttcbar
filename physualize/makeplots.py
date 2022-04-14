@@ -169,8 +169,8 @@ def GetColumn(readfrom_, filename_, treename_, variable_):
 print ("ready to make the stacks")
 import plotlib as plib
 
-phyplt = plib.plotlib("../../plot_attributes.yaml",
-                 "../../process_attributes.yaml")
+phyplt = plib.plotlib("plot_attributes.yaml",
+                 "process_attributes.yaml")
 
 print ("plotter instantiated ")
 

@@ -38,7 +38,7 @@ class plotlib:
         self.maxorder     = max( set( [ self.process_attr[ip]["order"] for ip in self.process_attr.keys() ] ) )
         
         self.lumi         = 60000.
-        self.prefix       = "../../output/"
+        self.prefix       = "../AwkwardAnalyzer/output/"
         print ("maxorder: ", self.maxorder)        
         print ("plot attributes== ", self.plot_attr)
         print ("process attributes== ", self.process_attr.keys())
@@ -235,7 +235,7 @@ class plotlib:
                     instack  = self.process_attr[ip]["instack"]
                     if instack: 
                         print ("opening file: ", rootfile)
-                        f[iprocess]  = TFile("../../output/"+rootfile,"READ")
+                        f[iprocess]  = TFile(self.prefix+rootfile,"READ")
                         print ("file: ../../output/"+rootfile)
                         print ("ivar: ", ivar)
                         histo = f[iprocess].Get("h_reg_DYee_"+ivar)
