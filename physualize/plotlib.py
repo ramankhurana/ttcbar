@@ -249,7 +249,7 @@ class plotlib:
                         histo.SetLineColor(self.process_attr[ip]["color"])
                         histo.SetLineWidth(2)
                         
-                        thstack.Add(histo)
+                        thstack.Add(histo,"H")
                         leg.AddEntry(histo,self.process_attr[ip]["leg"],"PL")
                         
                         
