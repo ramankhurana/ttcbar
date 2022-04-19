@@ -30,13 +30,19 @@ def SetHist(HISTNAME, binning):
 
 import copy
 def VarToHist(df_var, df_weight, HISTNAME, binning):
+    start = time.clock()
+    
+    print ("histogram function is called")
     binning_ = copy.deepcopy(binning)
     print ("inside VarToHist")
-    df_var = pd.Series(df_var)
+    #df_var = pd.Series(df_var)
+    df_var = np.array(df_var)
     
     print ("variable for plotting: ", len(df_var))
     h_var = SetHist(HISTNAME, binning_)
-    weight = df_weight
+    
+    #weight = df_weight
+    weight = np.array(df_weight)
 
     if len(binning_) >3:
         binning_.append(10000) ## to take care of overflow                                                                                                                         
@@ -57,6 +63,9 @@ def VarToHist(df_var, df_weight, HISTNAME, binning):
         h_var.SetBinContent(ibin+1, n[ibin])
         
     print ("Integral of histo: ", h_var.Integral())
+    end = time.clock()
+
+    print ("histogramming done in %.4gs" % (end-start))
     return h_var
 
 

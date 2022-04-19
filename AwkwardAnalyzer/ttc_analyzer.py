@@ -39,7 +39,7 @@ def runOneFile(filename):
     nevents = 0.0
     if Isdata()==False:  
         print ("getting the events for normalisation", ak.to_list(file_["nEventsGenWeighted"].values())[1])
-        nevents=ak.to_list(file_["nEventsGenWeighted"].values())[2]
+        nevents=ak.to_list(file_["nEventsGenWeighted"].values())[1]
     fulltree_=ak.ArrayBuilder() ## defauter, to merge the zip later for each chunch of rootfile. 
     niterations=0
     
@@ -57,6 +57,7 @@ def runOneFile(filename):
     for tree_ in uproot4.iterate(file_["Events"],allvars,
                                  step_size=100000):
         niterations=niterations+1
+        print ("iteration number: ", niterations)
         ## dict of name in tuples and local name, right now they are kept exactly the same. 
         allvars_dict = {}
         for ivar in allvars:
@@ -94,6 +95,7 @@ def runOneFile(filename):
 
     f.cd()
     h_total  = TH1F("h_total_mcweight", "h_total_mcweight", 2,0,2)
+    
     h_total.SetBinContent(1,nevents)
     h_total.Write()
 

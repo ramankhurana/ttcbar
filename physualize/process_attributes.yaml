@@ -2,7 +2,7 @@ DY:
   color: 632
   fileN:
   - DY.root
-  instack: true
+  instack: false
   leg: DY
   order: 0
   xs: 6077.22
@@ -27,7 +27,7 @@ WJet:
   color: 593
   fileN:
   - WJets.root
-  instack: true
+  instack: false
   leg: W+jets
   order: 2
   xs: 61526.7
@@ -35,7 +35,7 @@ WWW:
   color: 811
   fileN:
   - WWW.root
-  instack: false
+  instack: true
   leg: VVV
   order: 4
   xs: 0.2086
@@ -43,7 +43,7 @@ WWZ:
   color: 811
   fileN:
   - WWZ.root
-  instack: false
+  instack: true
   leg: VVV
   order: 4
   xs: 0.1707
@@ -59,7 +59,7 @@ WZ_ew:
   color: 425
   fileN:
   - WZ_ew.root
-  instack: true
+  instack: false
   leg: VV
   order: 3
   xs: 0.0163
@@ -107,7 +107,7 @@ ssWW:
   color: 425
   fileN:
   - ssWW.root
-  instack: true
+  instack: false
   leg: VV
   order: 3
   xs: 0.04932
