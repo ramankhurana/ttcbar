@@ -3,7 +3,7 @@
 ## physualize: a visualisation package for HEPhysicists
 
 
-## install the code using: 
+### install the code using: 
 git clone git@github.com:ramankhurana/ttcbar.git
 
 cd ttcbar/physualize
@@ -17,8 +17,11 @@ Running the code is simple,
 6. To save all the plots just do: 
 
 python 
+
 import plotlib as plib
+
 plib.plotlib("plot_attributes.yaml",  "process_attributes.yaml").SaveAllPlots("stack")
+
 
 
 or alternatevely you can do following which essentially does the same thing for now: 
