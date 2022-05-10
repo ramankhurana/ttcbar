@@ -13,12 +13,13 @@ cat_str = category+"_"+category
 
 
 mass_points = [200,300,350,400,500,600,700]
-coupling    = "rtc01"
+coupling    = "rtc08"
 template_card = "datacards_ttc_2017/ttc_datacard_2017_SR_"+cat_str+"_template.txt"
 dc_tmplate=open(template_card).readlines()
 
+rtc_=int(coupling.split("rtc")[-1])*0.1
 
-RL  = RunLimits("2017","ttc", category, "asimov") 
+RL  = RunLimits("2017","ttc", category, "asimov", rtc_) 
 
 print ("self.limitlog: ",RL.limitlog)
 
@@ -33,6 +34,7 @@ for imass in mass_points:
     
     fout = open(card_name,'w')
     dc_out =  ([iline.replace("MASSPOINT",str(imass)) for iline in dc_tmplate] )
+    dc_out =  ([iline.replace("COUPLINGVALUE",coupling) for iline in dc_out] ) ## mind that now it is dc_out
     fout.writelines(dc_out)
     fout.close()
     
@@ -42,13 +44,19 @@ for imass in mass_points:
     if counter==0: mode_="w"
     param_list=(mA,rtc)
     limitlogfile = RL.LogToLimitList(logname,param_list,mode_)
-
-
-
     counter=counter+1
     
 ## this is out of the for loop 
+
+### scale the limits with cross-section 
+
+RL.getlimitScaled_1D(rtc_)
+
+### convert text file to root file 
 RL.TextFileToRootGraphs()
+
+
+### save the .root file into a pdf file for presentations  
 RL.SaveLimitPdf1D()
     
     

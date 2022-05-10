@@ -3,7 +3,7 @@
 >>> random number generator seed is 123456
 
  -- AsymptoticLimits ( CLs ) --
-Observed Limit: r < 0.0064
+Observed Limit: r < 0.0066
 Expected  2.5%: r < 0.0036
 Expected 16.0%: r < 0.0046
 Expected 50.0%: r < 0.0063
