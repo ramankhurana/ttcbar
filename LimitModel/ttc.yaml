@@ -29,12 +29,17 @@ SR_em:
     - lumi: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
     - pileup: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
     - prefire: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
+    - fake: [TTTo1L]
+    - jes: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
+    - jer: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
     
   UnclnN:
     - lumi: 1.025 
     - pileup: shape
     - prefire: shape
-
+    - fake: shape 
+    - jes: shape
+    - jer: shape 
 
 ## Signal Region ee
 SR_ee: 
@@ -67,11 +72,17 @@ SR_ee:
     - lumi: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
     - pileup: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
     - prefire: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
-    
+    - fake: [TTTo1L]
+    - jes: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
+    - jer: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
+
   UnclnN:
     - lumi: 1.025 
     - pileup: shape
     - prefire: shape
+    - fake: shape
+    - jes: shape
+    - jer: shape
 
 
 ## Signal Region mm
@@ -105,8 +116,14 @@ SR_mm:
     - lumi: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
     - pileup: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
     - prefire: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
+    - fake: [TTTo1L]
+    - jes: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
+    - jer: [TAToTTQ_COUPLINGVALUE_MAMASSPOINT, TTTo1L, ttWW, ttWZ, ttWtoLNu, ttZ]
     
   UnclnN:
     - lumi: 1.025 
     - pileup: shape
     - prefire: shape
+    - fake: shape
+    - jes: shape
+    - jer: shape

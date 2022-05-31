@@ -281,7 +281,7 @@ class RunLimits:
         
         latex.DrawLatex(0.20, 0.7, "ttc  "+self.analysisbin_);
         latex.DrawLatex(0.20, 0.64, "Extra Yukawa");
-        latex.DrawLatex(0.15, 0.58, "rtc = 0.4"); #sin#theta = 0.7, m_{\chi} = 1 GeV");
+        latex.DrawLatex(0.15, 0.58, "rtc ="+str(self.coupling_)); #sin#theta = 0.7, m_{\chi} = 1 GeV");
         #latex.DrawLatex(0.15, 0.52, "sin#theta = 0.7, m_{\chi} = 1 GeV");
         
                 

@@ -3,17 +3,24 @@ import numpy as np
 import sys, optparse,argparse
 from LimitHelper import *
 
+
 usage = "python runlimits.py -c em"
 parser = argparse.ArgumentParser(description=usage)
 parser.add_argument("-c", "--category", dest="category", default="em")
-args = parser.parse_args()
-category = args.category
+parser.add_argument("-rtc", "--rtc", dest="rtc", default="rtc01")
 
+
+args = parser.parse_args()
+
+category = args.category
+coupling=args.rtc
+
+print ("coupling: ",coupling)
 cat_str = category+"_"+category
 
 
 mass_points = [200,300,350,400,500,600,700]
-coupling    = "rtc08"
+#coupling    = "rtc01"
 template_card = "datacards_ttc_2017/ttc_datacard_2017_SR_"+cat_str+"_template.txt"
 dc_tmplate=open(template_card).readlines()
 
@@ -27,7 +34,7 @@ counter=0
 for imass in mass_points:
     mA = str(imass)
     rtc = coupling.split("rtc")[-1]
-    
+    print ("rtc: ",rtc)
     parameters = "MA"+str(imass)+"_"+coupling
     card_name = template_card.replace("template",parameters)
     print ("card_name: ", card_name)

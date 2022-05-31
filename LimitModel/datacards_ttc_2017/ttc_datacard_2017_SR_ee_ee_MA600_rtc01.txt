@@ -18,3 +18,6 @@ rate                                    -1      -1     -1     -1        -1     -
 lumi       lnN  1.025  1.025  1.025  1.025  1.025  1.025
 pileup   shape      1      1      1      1      1      1
 prefire  shape      -      -      1      1      1      1
+fake     shape      -      1      -      -      -      -
+jes      shape      1      1      1      1      1      1
+jer      shape      1      1      1      1      1      1
